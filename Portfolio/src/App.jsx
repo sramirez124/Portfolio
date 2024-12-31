@@ -1,13 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Toggle from './Toggle';
+import Home from './Home';
+import useLocalStorage from 'use-local-storage'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
+  const [theme, setTheme] = useLocalStorage(false);
 
   return (
     <>
-      
+    <Home />
     </>
   )
 }
