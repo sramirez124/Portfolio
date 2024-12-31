@@ -4,8 +4,12 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 function SideBar() {
     return (
         <div className="sideBar">
-            <h1>Steven Ramirez</h1>
-            <p>MERN Full Stack Developer | Game Designer</p>
+            <div className="title">
+                {/* Add link for Home tab after backend is done */}
+                <a href="/"><h1>Steven Ramirez</h1></a>
+                <p>MERN Full Stack Developer | Game Designer</p>
+            </div>
+    
             <div className="links">
                 <div className="github">
                     <a href="https://github.com/sramirez124"><h2>GitHub</h2></a>
