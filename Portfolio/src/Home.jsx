@@ -16,8 +16,28 @@ function Home() {
         handleChange={() => setTheme(!theme)}
        />
 
-      <div className="sideBar">
-        <SideBar />
+      
+      <div className="content-container">
+        <div className="sideBar">
+          <SideBar />
+        </div>
+
+        <div className="body">
+          <div className='cards'> 
+            <div className="card">
+              <h1>Card 1</h1>
+            </div>
+            <div className="card">
+              <h1>Card 2</h1>
+            </div>
+            <div className="card">
+              <h1>Card 3</h1>
+            </div>
+            <div className="card">
+              <h1>Card 4</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </>

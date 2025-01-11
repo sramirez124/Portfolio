@@ -3,7 +3,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function SideBar() {
     return (
-        <div className="sideBar">
+        <div className="sideBarContent">
             <div className="title">
                 {/* Add link for Home tab after backend is done */}
                 <a href="/"><h1>Steven Ramirez</h1></a>
