@@ -22,13 +22,13 @@ function SideBar() {
                 <BrowserRouter>
                 <div className="projects">
                     <Routes>
-                        <Route path ="/Projects" element = {<Projects />} />
+                        <Route path ="Projects" element = {<Projects />} />
                     </Routes>
                     
                 </div>
                 <div className="aboutMe">
                    <Routes>
-                        <Route path ="/AboutMe" element = {<AboutMe />} />
+                        <Route path ="About Me" element = {<AboutMe />} />
                     </Routes>
                 </div>
                 </BrowserRouter>

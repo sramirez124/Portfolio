@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Toggle from './Toggle';
 import SideBar from './SideBar.jsx';
+import Projects from './Projects.jsx';
 import useLocalStorage from 'use-local-storage'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
