@@ -1,4 +1,6 @@
 import "./App.css"
+import AboutMe from "./AboutMe"
+import Projects from "./Projects"
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function SideBar() {
@@ -17,21 +19,20 @@ function SideBar() {
                 <div className="linkedin">
                     <a href="https://www.linkedin.com/in/steven-m-ramirez/"><h2>LinkedIn</h2></a>
                 </div>
+                <BrowserRouter>
                 <div className="projects">
-                    <h2>Projects</h2>
+                    <Routes>
+                        <Route path ="/Projects" element = {<Projects />} />
+                    </Routes>
+                    
                 </div>
                 <div className="aboutMe">
-                    <h2>About Me</h2>
+                   <Routes>
+                        <Route path ="/AboutMe" element = {<AboutMe />} />
+                    </Routes>
                 </div>
+                </BrowserRouter>
             </div>
-
-        {/* Used for later when adding backend */}
-        <BrowserRouter>
-        {/* <Routes>
-          <Route path ="/Projects" element = {<Projects />} />
-          <Route path ="/AboutMe" element = {<AboutMe />} />
-        </Routes> */}
-      </BrowserRouter>
         </div>
     )
 }
