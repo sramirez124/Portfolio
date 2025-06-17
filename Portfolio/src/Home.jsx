@@ -11,6 +11,16 @@ function Home() {
 
   return (
     <>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Sidebar />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Project />} />
+          <Route path="aboutMe" element={<AboutMe />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
     <div className="App" data-theme={theme ? 'dark' : 'light'}>
       <Toggle
         isChecked={theme}
