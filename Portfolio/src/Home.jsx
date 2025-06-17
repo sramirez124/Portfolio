@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Toggle from './Toggle';
-import SideBar from './SideBar.jsx';
+import SideBar from './SideBar';
+import AboutMe from './AboutMe';
 import Projects from './Projects.jsx';
 import useLocalStorage from 'use-local-storage'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
@@ -11,15 +12,7 @@ function Home() {
 
   return (
     <>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Sidebar />}>
-          <Route index element={<Home />} />
-          <Route path="projects" element={<Project />} />
-          <Route path="aboutMe" element={<AboutMe />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    
 
     <div className="App" data-theme={theme ? 'dark' : 'light'}>
       <Toggle
@@ -30,7 +23,6 @@ function Home() {
       
       <div className="content-container">
         <div className="sideBar">
-          <SideBar />
         </div>
 
         <div className="body">
